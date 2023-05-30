@@ -1,6 +1,9 @@
 #This script is a very basic way to mount EXT4 drives in Windows via WSL. This is a very jank scipt and not professional at all.
 #I created this to use on external drive between a Windows 11 system and a Steam Deck, but it should work with other EXT4 drives.
 
+#The drive will be accessed like a network share with the following path (unless modified previously by user):
+# \\wsl.localhost\LINUXDISTROHERE\mnt\wsl\YOURDRIVEHERE
+
 #Change \\.\PHYSICALDRIVE1 to the EXT4 drive listed by entering "GET-CimInstance -query "SELECT * from Win32_DiskDrive" in PowerShell if needed:
 $EXT4Drive = "\\.\PHYSICALDRIVE1"
 
