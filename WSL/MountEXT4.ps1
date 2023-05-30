@@ -5,8 +5,10 @@
 # \\wsl.localhost\LINUXDISTROHERE\mnt\wsl\YOURDRIVEHERE
 
 #Change \\.\PHYSICALDRIVE1 to the EXT4 drive listed by entering "GET-CimInstance -query "SELECT * from Win32_DiskDrive" in PowerShell if needed:
+
 $EXT4Drive = "\\.\PHYSICALDRIVE1"
 
+#Link to the Unmount script: https://github.com/ISolox/simplypowershell/edit/main/WSL/UnmountEXT4.ps1
 
 #This gives a UAC prompt to run as an Administrator:
 Function Check-RunAsAdministrator()
